@@ -1,0 +1,2 @@
+module DiaSemanalsHelper
+end

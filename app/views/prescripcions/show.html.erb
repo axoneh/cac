@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Diasvalidez:</strong>
+  <%= @prescripcion.diasValidez %>
+</p>
+
+<p>
+  <strong>Anticoagulantes:</strong>
+  <%= @prescripcion.anticoagulantes %>
+</p>
+
+<p>
+  <strong>Visita:</strong>
+  <%= @prescripcion.visita %>
+</p>
+
+<p>
+  <strong>Cuenta usuarios:</strong>
+  <%= @prescripcion.cuenta_usuarios %>
+</p>
+
+<%= link_to 'Edit', edit_prescripcion_path(@prescripcion) %> |
+<%= link_to 'Back', prescripcions_path %>

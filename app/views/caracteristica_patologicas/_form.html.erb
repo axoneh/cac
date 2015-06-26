@@ -1,0 +1,25 @@
+<%= form_for(@caracteristica_patologica) do |f| %>
+  <% if @caracteristica_patologica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@caracteristica_patologica.errors.count, "error") %> prohibited this caracteristica_patologica from being saved:</h2>
+
+      <ul>
+      <% @caracteristica_patologica.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :descripcion %><br>
+    <%= f.text_area :descripcion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidadgramos:</strong>
+  <%= @prescripcion_diarium.cantidadGramos %>
+</p>
+
+<p>
+  <strong>Prescripcions:</strong>
+  <%= @prescripcion_diarium.prescripcions %>
+</p>
+
+<p>
+  <strong>Dia semanals:</strong>
+  <%= @prescripcion_diarium.dia_semanals %>
+</p>
+
+<%= link_to 'Edit', edit_prescripcion_diarium_path(@prescripcion_diarium) %> |
+<%= link_to 'Back', prescripcion_diaria_path %>

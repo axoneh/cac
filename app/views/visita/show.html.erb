@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Inrdomicilio:</strong>
+  <%= @visitum.InrDomicilio %>
+</p>
+
+<p>
+  <strong>Pacientes:</strong>
+  <%= @visitum.pacientes %>
+</p>
+
+<p>
+  <strong>Observacion:</strong>
+  <%= @visitum.observacion %>
+</p>
+
+<%= link_to 'Edit', edit_visitum_path(@visitum) %> |
+<%= link_to 'Back', visita_path %>

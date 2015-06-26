@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pregunta:</strong>
+  <%= @pregunta_visitum.pregunta %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @pregunta_visitum.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_pregunta_visitum_path(@pregunta_visitum) %> |
+<%= link_to 'Back', pregunta_visita_path %>

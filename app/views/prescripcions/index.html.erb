@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Prescripcions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Diasvalidez</th>
+      <th>Anticoagulantes</th>
+      <th>Visita</th>
+      <th>Cuenta usuarios</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prescripcions.each do |prescripcion| %>
+      <tr>
+        <td><%= prescripcion.diasValidez %></td>
+        <td><%= prescripcion.anticoagulantes %></td>
+        <td><%= prescripcion.visita %></td>
+        <td><%= prescripcion.cuenta_usuarios %></td>
+        <td><%= link_to 'Show', prescripcion %></td>
+        <td><%= link_to 'Edit', edit_prescripcion_path(prescripcion) %></td>
+        <td><%= link_to 'Destroy', prescripcion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prescripcion', new_prescripcion_path %>

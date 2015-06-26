@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @anticoagulante.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @anticoagulante.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_anticoagulante_path(@anticoagulante) %> |
+<%= link_to 'Back', anticoagulantes_path %>

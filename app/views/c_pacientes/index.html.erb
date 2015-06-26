@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing C Pacientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Respuesta</th>
+      <th>Pacientes</th>
+      <th>Caracteristicas patologicas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @c_pacientes.each do |c_paciente| %>
+      <tr>
+        <td><%= c_paciente.respuesta %></td>
+        <td><%= c_paciente.pacientes %></td>
+        <td><%= c_paciente.caracteristicas_patologicas %></td>
+        <td><%= link_to 'Show', c_paciente %></td>
+        <td><%= link_to 'Edit', edit_c_paciente_path(c_paciente) %></td>
+        <td><%= link_to 'Destroy', c_paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New C paciente', new_c_paciente_path %>

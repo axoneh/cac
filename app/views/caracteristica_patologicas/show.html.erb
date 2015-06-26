@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @caracteristica_patologica.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @caracteristica_patologica.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_caracteristica_patologica_path(@caracteristica_patologica) %> |
+<%= link_to 'Back', caracteristica_patologicas_path %>

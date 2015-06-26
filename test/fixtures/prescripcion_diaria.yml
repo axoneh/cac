@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidadGramos: 9.99
+  prescripcions_id: 
+  dia_semanals_id: 
+
+two:
+  cantidadGramos: 9.99
+  prescripcions_id: 
+  dia_semanals_id: 

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Respuesta:</strong>
+  <%= @c_paciente.respuesta %>
+</p>
+
+<p>
+  <strong>Pacientes:</strong>
+  <%= @c_paciente.pacientes %>
+</p>
+
+<p>
+  <strong>Caracteristicas patologicas:</strong>
+  <%= @c_paciente.caracteristicas_patologicas %>
+</p>
+
+<%= link_to 'Edit', edit_c_paciente_path(@c_paciente) %> |
+<%= link_to 'Back', c_pacientes_path %>

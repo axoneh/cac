@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  InrDomicilio: 9.99
+  pacientes_id: 
+  observacion: MyText
+
+two:
+  InrDomicilio: 9.99
+  pacientes_id: 
+  observacion: MyText

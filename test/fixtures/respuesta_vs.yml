@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visita_id: 
+  pregunta_visita_id: 
+
+two:
+  visita_id: 
+  pregunta_visita_id: 

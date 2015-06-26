@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Identificacion:</strong>
+  <%= @cuenta_usuario.identificacion %>
+</p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @cuenta_usuario.nombre %>
+</p>
+
+<p>
+  <strong>Apellido:</strong>
+  <%= @cuenta_usuario.apellido %>
+</p>
+
+<p>
+  <strong>Rol:</strong>
+  <%= @cuenta_usuario.rol %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @cuenta_usuario.genero %>
+</p>
+
+<p>
+  <strong>Fechanacimiento:</strong>
+  <%= @cuenta_usuario.fechaNacimiento %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @cuenta_usuario.direccion %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @cuenta_usuario.estado %>
+</p>
+
+<p>
+  <strong>Tipo documentos:</strong>
+  <%= @cuenta_usuario.tipo_documentos %>
+</p>
+
+<p>
+  <strong>Estado civils:</strong>
+  <%= @cuenta_usuario.estado_civils %>
+</p>
+
+<%= link_to 'Edit', edit_cuenta_usuario_path(@cuenta_usuario) %> |
+<%= link_to 'Back', cuenta_usuarios_path %>

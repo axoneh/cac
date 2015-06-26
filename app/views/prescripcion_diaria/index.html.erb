@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Prescripcion Diaria</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cantidadgramos</th>
+      <th>Prescripcions</th>
+      <th>Dia semanals</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @prescripcion_diaria.each do |prescripcion_diarium| %>
+      <tr>
+        <td><%= prescripcion_diarium.cantidadGramos %></td>
+        <td><%= prescripcion_diarium.prescripcions %></td>
+        <td><%= prescripcion_diarium.dia_semanals %></td>
+        <td><%= link_to 'Show', prescripcion_diarium %></td>
+        <td><%= link_to 'Edit', edit_prescripcion_diarium_path(prescripcion_diarium) %></td>
+        <td><%= link_to 'Destroy', prescripcion_diarium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Prescripcion diarium', new_prescripcion_diarium_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  respuesta: MyText
+  pacientes_id: 
+  caracteristicas_patologicas_id: 
+
+two:
+  respuesta: MyText
+  pacientes_id: 
+  caracteristicas_patologicas_id: 

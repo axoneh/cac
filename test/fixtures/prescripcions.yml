@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  diasValidez: 1
+  anticoagulantes_id: 
+  visita_id: 
+  cuenta_usuarios_id: 
+
+two:
+  diasValidez: 1
+  anticoagulantes_id: 
+  visita_id: 
+  cuenta_usuarios_id: 
